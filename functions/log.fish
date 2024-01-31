@@ -1,7 +1,8 @@
 function log --argument-names level --description "Utility to create a 'loglike' formatted msg"
     # The log output is meant only for interactive sessions
-    status is-interactive; or return 0
+    # status is-interactive; or return 0
 
+    # TODO: <kpbaks 2023-07-19 10:20:18> add a subcommand to show all log messages for the current session e.g. `log history` or `log show`
     # TODO: <kpbaks 2023-07-14 09:18:05> add support for logging to a file
     # TODO: <kpbaks 2023-07-14 09:18:05> add support for logging to a file and stdout/stderr
     # TODO: <kpbaks 2023-07-14 09:18:05> add support for reading from stdin, do it in streaming fashion, and log each line
